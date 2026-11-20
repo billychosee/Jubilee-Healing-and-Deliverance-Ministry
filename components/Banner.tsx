@@ -3,8 +3,8 @@ export default function Banner() {
     <section className="container">
       <div className="banner">
         <img
-          src="https://placehold.co/1440x640?text=Banner+Image"
-          alt="Placeholder: congregation worshipping"
+          src="/middle-section.png"
+          alt="Congregation worshipping"
           width={1440}
           height={640}
           loading="eager"

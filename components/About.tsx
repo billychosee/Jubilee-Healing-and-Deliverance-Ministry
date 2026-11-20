@@ -35,8 +35,8 @@ export default function About() {
       </div>
       <div className="about-media">
         <img
-          src="https://placehold.co/600x760?text=About+Image"
-          alt="Placeholder: two people reading together"
+          src="/about-us.png"
+          alt="Two people reading together"
           width={600}
           height={760}
         />

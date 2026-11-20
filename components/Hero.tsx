@@ -24,8 +24,8 @@ export default function Hero() {
         <span className="deco-dots dots-tr" aria-hidden="true"></span>
         <span className="deco-dots dots-bl" aria-hidden="true"></span>
         <img
-          src="https://placehold.co/640x760?text=Hero+Image"
-          alt="Placeholder: people celebrating together"
+          src="/hero.png"
+          alt="People celebrating together"
           width={640}
           height={760}
           loading="eager"

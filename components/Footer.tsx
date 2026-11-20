@@ -3,12 +3,8 @@ export default function Footer() {
     <footer id="contact" className="site-footer">
       <div className="container footer-container">
         <div className="footer-left">
-          <a href="#" className="logo-placeholder footer-logo" aria-label="Home">
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="45" fill="none" stroke="white" strokeWidth="4" />
-              <path d="M50 25 L50 75 M25 50 L75 50" stroke="white" strokeWidth="6" strokeLinecap="round" />
-              <circle cx="50" cy="50" r="10" fill="white" />
-            </svg>
+          <a href="#" className="footer-logo" aria-label="Home">
+            <img src="/JIM_lOGO.png" alt="Jubilee Healing and Deliverance Ministry logo" className="footer-logo-img" />
           </a>
           <div className="footer-address">
             <p>123 Church St. #23A</p>
