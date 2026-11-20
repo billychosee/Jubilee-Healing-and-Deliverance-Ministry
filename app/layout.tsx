@@ -1,0 +1,20 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Jubilee Healing and Deliverance Ministry",
+  description:
+    "Where Lives Encounter Freedom, Healing and Deliverance through Jesus Christ.",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
