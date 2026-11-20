@@ -31,18 +31,46 @@ ul li:last-child{margin-bottom:0}
 .btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:1.75rem}
 a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 
-.site-header{padding-block:28px}
+.site-header{
+  padding-block:12px;
+  transition:all .3s ease;
+  background:#fff;
+  box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
 .logo{width:64px;height:64px}
 .nav{display:flex;gap:30px;font-size:.9rem;font-weight:600}
 .nav a:hover{color:var(--blue)}
+
+.site-header.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding-block: 16px;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.site-header.nav-hidden {
+  transform: translateY(-100%);
+}
+
+.site-header.scrolled .header-inner {
+  padding: 0;
+}
 
 .sm-toggle{display:none}
 
 @media (max-width: 960px) {
   .staggered-menu-wrapper{display:block}
   .sm-toggle{display:inline-flex}
-  .site-header .brand{display:none}
+  .site-header{
+    display:none;
+  }
   .staggered-menu-panel{background:#fff;color:var(--ink)}
   .staggered-menu-panel .sm-panel-item{color:var(--blue-deep)}
   .staggered-menu-panel .sm-panel-item:hover{color:var(--gold)}
@@ -265,6 +293,51 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto } }
+
+.back-to-top-fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(11, 74, 168, 0.4);
+  transition: transform 0.2s ease, background 0.2s ease, opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top-fixed:hover {
+  background: var(--blue-deep);
+  transform: translateY(-4px);
+}
+
+.back-to-top-fixed:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.back-to-top-fixed svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 560px) {
+  .back-to-top-fixed {
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+}
 
 .card-swap {
   --card-w: 380px; --card-h: 280px; --card-radius: 18px;

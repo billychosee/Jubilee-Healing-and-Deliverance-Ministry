@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Banner from "@/components/Banner";
 import About from "@/components/About";
@@ -13,7 +12,6 @@ import SplashCursor from "@/components/SplashCursor";
 export default function Home() {
   return (
     <>
-      <Header />
       <main id="top">
         <ScrollReveal split="words" effect="rise" staggerMs={60}>
           <Hero />

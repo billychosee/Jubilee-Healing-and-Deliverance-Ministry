@@ -14,10 +14,16 @@ const socialItems = [
   { label: "YouTube", link: "https://youtube.com" }
 ];
 
-export default function Header() {
+interface HeaderProps {
+  scrolled?: boolean;
+  hidden?: boolean;
+}
+
+export default function Header({ scrolled = false, hidden = false }: HeaderProps) {
   return (
     <>
       <StaggeredMenu
+        className={hidden ? "nav-hidden" : undefined}
         position="right"
         items={menuItems}
         socialItems={socialItems}
@@ -33,7 +39,7 @@ export default function Header() {
         onMenuOpen={() => {}}
         onMenuClose={() => {}}
       />
-      <header className="site-header">
+      <header className={`site-header ${scrolled ? "scrolled" : ""} ${hidden ? "nav-hidden" : ""}`}>
         <div className="container header-inner">
           <a href="#top" className="brand" aria-label="Jubilee Healing and Deliverance Ministry">
             <img src="/JIM_lOGO.png" alt="Jubilee Healing and Deliverance Ministry logo" className="logo" />

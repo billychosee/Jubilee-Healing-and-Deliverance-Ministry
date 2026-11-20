@@ -34,18 +34,6 @@ export default function Footer() {
             <p>(454) 568-4588</p>
             <p>AFMDA@gmail.com</p>
           </div>
-          <a href="#" className="back-to-top" aria-label="Back to top">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M12 19V5M5 12l7-7 7 7" />
-            </svg>
-          </a>
         </div>
       </div>
       <div className="container footer-bottom">
