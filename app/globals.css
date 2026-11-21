@@ -309,20 +309,18 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 4px 20px rgba(11, 74, 168, 0.4);
-  transition: transform 0.2s ease, background 0.2s ease, opacity 0.3s ease, visibility 0.3s ease;
+  transition: none;
   z-index: 99;
   opacity: 1;
   visibility: visible;
 }
 
 .back-to-top-fixed:hover {
-  background: var(--blue-deep);
-  transform: translateY(-4px);
+  background: var(--blue);
 }
 
 .back-to-top-fixed:focus-visible {
-  outline: 3px solid var(--gold);
-  outline-offset: 3px;
+  outline: none;
 }
 
 .back-to-top-fixed svg {
