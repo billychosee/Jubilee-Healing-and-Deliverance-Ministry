@@ -6,7 +6,6 @@ import VisionCarousel from "@/components/VisionCarousel";
 import Values from "@/components/Values";
 import Declare from "@/components/Declare";
 import ScrollReveal from "@/components/ScrollReveal";
-import SplashCursor from "@/components/SplashCursor";
 
 export default function Home() {
   return (
@@ -28,7 +27,6 @@ export default function Home() {
           <Declare />
         </ScrollReveal>
       </main>
-      <SplashCursor />
     </>
   );
 }

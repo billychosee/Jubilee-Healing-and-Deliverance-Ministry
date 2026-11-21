@@ -266,6 +266,7 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 @media (max-width: 960px) {
     .nav { display: none }
     .hero, .about { grid-template-columns: 1fr; gap: 40px }
+    .hero { padding-top: 90px }
     .hero-media { justify-self: center }
     .journey-grid { grid-template-columns: 1fr }
     .cards { grid-template-columns: repeat(2, 1fr) }
@@ -290,6 +291,7 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
     .sm-toggle { display: inline-flex !important }
     .header-inner .btn { display: none }
     .footer-links { flex-direction: column; gap: 20px }
+    .deco-quarter { right: -10px }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto } }
@@ -499,3 +501,4 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 @media (prefers-reduced-motion: reduce) {
   .splash-cursor { display: none; }
 }
+
