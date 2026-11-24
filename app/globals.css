@@ -87,6 +87,7 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .hero h1{color:#fff;font-size:clamp(2rem,4.4vw,3rem);margin-bottom:1.25rem}
 .hero p{color:#fff;margin-bottom:1rem}
 .hero .eyebrow{justify-content:center}
+.hero .btn-row{justify-content:center}
 .eyebrow{color:var(--gold);font-weight:700;font-size:.85rem;margin-bottom:1rem;display:inline-flex;align-items:center;gap:10px}
 .eyebrow::before{content:"";width:18px;height:2px;background:var(--gold)}
 

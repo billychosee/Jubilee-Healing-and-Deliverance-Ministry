@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="hero container">
+    <section className="hero">
       <div className="hero-inner">
         <p className="eyebrow">Jubilee Healing and Deliverance Ministry</p>
         <h1>Welcome to Jubilee Healing and Deliverance Ministry!</h1>
