@@ -90,6 +90,7 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .hero .btn-row{justify-content:center}
 .eyebrow{color:var(--gold);font-weight:700;font-size:.85rem;margin-bottom:1rem;display:inline-flex;align-items:center;gap:10px}
 .eyebrow::before{content:"";width:18px;height:2px;background:var(--gold)}
+.eyebrow::after{content:"";width:18px;height:2px;background:var(--gold)}
 
 .banner{position:relative;border-radius:var(--radius);overflow:hidden;color:#fff}
 .banner img{width:100%;aspect-ratio:16/7;object-fit:cover;min-height:340px}
