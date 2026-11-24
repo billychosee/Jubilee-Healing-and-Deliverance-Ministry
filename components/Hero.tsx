@@ -1,3 +1,5 @@
+import GlareHover from "@/components/GlareHover";
+
 export default function Hero() {
   return (
     <section className="hero container">
@@ -23,13 +25,24 @@ export default function Hero() {
         <span className="deco-quarter" aria-hidden="true"></span>
         <span className="deco-dots dots-tr" aria-hidden="true"></span>
         <span className="deco-dots dots-bl" aria-hidden="true"></span>
-        <img
-          src="/hero.png"
-          alt="People celebrating together"
-          width={640}
-          height={760}
-          loading="eager"
-        />
+        <GlareHover
+          width="100%"
+          height="auto"
+          borderRadius="20px"
+          mode="hover"
+          variant="sheen"
+          glareOpacity={0.45}
+          glareSize={24}
+          intro
+        >
+          <img
+            src="/hero.png"
+            alt="People celebrating together"
+            width={640}
+            height={760}
+            loading="eager"
+          />
+        </GlareHover>
       </div>
     </section>
   );

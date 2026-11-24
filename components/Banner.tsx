@@ -1,7 +1,20 @@
+import GlareHover from "@/components/GlareHover";
+
 export default function Banner() {
   return (
     <section className="container">
-      <div className="banner">
+      <GlareHover
+        width="100%"
+        height="auto"
+        borderRadius="16px"
+        mode="hover"
+        variant="streak"
+        glareOpacity={0.35}
+        glareSize={28}
+        glareAngle={-35}
+        intro
+      >
+        <div className="banner">
         <img
           src="/middle-section.png"
           alt="Congregation worshipping"
@@ -21,7 +34,8 @@ export default function Banner() {
             John 8:36 (KJV) &quot;If the Son therefore shall make you free, ye shall be free indeed.&quot;
           </blockquote>
         </div>
-      </div>
+        </div>
+      </GlareHover>
     </section>
   );
 }

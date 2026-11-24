@@ -1,3 +1,5 @@
+import GlareHover from "@/components/GlareHover";
+
 export default function About() {
   return (
     <section id="history" className="container about">
@@ -34,12 +36,23 @@ export default function About() {
         </p>
       </div>
       <div className="about-media">
-        <img
-          src="/about-us.png"
-          alt="Two people reading together"
-          width={600}
-          height={760}
-        />
+        <GlareHover
+          width="100%"
+          height="auto"
+          borderRadius="16px"
+          mode="hover"
+          variant="streak"
+          glareOpacity={0.4}
+          glareSize={26}
+          intro
+        >
+          <img
+            src="/about-us.png"
+            alt="Two people reading together"
+            width={600}
+            height={760}
+          />
+        </GlareHover>
       </div>
     </section>
   );
