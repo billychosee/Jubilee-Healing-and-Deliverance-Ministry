@@ -266,7 +266,7 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 @media (max-width: 960px) {
     .nav { display: none }
     .about { grid-template-columns: 1fr; gap: 40px }
-    .hero { min-height: 100dvh; padding-block: 60px 80px; padding-inline: 20px }
+    .hero { min-height: 100dvh; display:flex;flex-direction:column;align-items:center;justify-content:center; padding-block: 20px; padding-inline: 20px }
     .journey-grid { grid-template-columns: 1fr }
     .cards { grid-template-columns: repeat(2, 1fr) }
     
