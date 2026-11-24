@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="hero container">
-      <div className="hero-text">
+      <div className="hero-inner">
         <p className="eyebrow">Jubilee Healing and Deliverance Ministry</p>
         <h1>Welcome to Jubilee Healing and Deliverance Ministry!</h1>
         <p>
@@ -18,18 +18,6 @@ export default function Hero() {
             Our Vision and Commitment
           </a>
         </div>
-      </div>
-      <div className="hero-media">
-        <span className="deco-quarter" aria-hidden="true"></span>
-        <span className="deco-dots dots-tr" aria-hidden="true"></span>
-        <span className="deco-dots dots-bl" aria-hidden="true"></span>
-        <img
-          src="/hero.png"
-          alt="People celebrating together"
-          width={640}
-          height={760}
-          loading="eager"
-        />
       </div>
     </section>
   );
